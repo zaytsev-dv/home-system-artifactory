@@ -6,7 +6,7 @@
 
     <groupId>ru.home.system.artifactory</groupId>
     <artifactId>home-system-artifactory</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.1</version>
 
     <build>
         <finalName>home-system-artifactory</finalName>
