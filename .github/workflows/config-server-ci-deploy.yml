@@ -48,5 +48,5 @@ jobs:
         run: docker push ${{ secrets.DOCKER_REPO_HOME_SYSTEM_ARTIFACTORY }}:${APP_POLYGON}-latest
 
       - name: Artifactory push
-        run: docker push ${{ secrets.ARTIFACTORY_URL }}/home-system-artifactory/home-system-artifactory
+        run: docker push ${{ secrets.ARTIFACTORY_URL }}/home-system-artifactory/${{ secrets.DOCKER_REPO_HOME_SYSTEM_ARTIFACTORY }}:${APP_POLYGON}-latest
 
