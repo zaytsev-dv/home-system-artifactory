@@ -1,4 +1,4 @@
-package ru.home.system.main;
+package ru.home.system.artifactory;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
