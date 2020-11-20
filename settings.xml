@@ -3,13 +3,13 @@
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <servers>
         <server>
-            <username>test</username>
-            <password>Integer123</password>
+            <username>${artifactory.user}</username>
+            <password>${artifactory.password}</password>
             <id>central</id>
         </server>
         <server>
-            <username>test</username>
-            <password>Integer123</password>
+            <username>${artifactory.user}</username>
+            <password>${artifactory.password}</password>
             <id>snapshots</id>
         </server>
     </servers>
