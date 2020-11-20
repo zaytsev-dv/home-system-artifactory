@@ -47,9 +47,6 @@ jobs:
       - name: Docker push
         run: docker push ${{ secrets.DOCKER_REPO_HOME_SYSTEM_ARTIFACTORY }}:${APP_POLYGON}-latest
 
-      - name: Artifactory docker login
-        run: docker login ${{ secrets.ARTIFACTORY_URL }} -u ${{ secrets.ARTIFACTORY_USER }} -p ${{ secrets.ARTIFACTORY_PASSWORD }}
-
-      - name: Artifactory docker push
-        run: docker push homesystemartifactory-home-system-artifactory-docker-virtual.jfrog.io/${{ secrets.DOCKER_REPO_HOME_SYSTEM_ARTIFACTORY }}:${APP_POLYGON}-latest
+      - name: Artifactory push
+        run: mvn deploy -Dbuildnumber=1 -s settings.xml
 
