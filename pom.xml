@@ -41,12 +41,12 @@
         <repository>
             <id>central</id>
             <name>zaytsev_dv-releases</name>
-            <url>https://homesystemartifactory.jfrog.io/artifactory/maven-virtual</url>
+            <url>https://homesystemartifactory.jfrog.io/artifactory/maven-local</url>
         </repository>
         <snapshotRepository>
             <id>snapshots</id>
             <name>zaytsev_dv-snapshots</name>
-            <url>https://homesystemartifactory.jfrog.io/artifactory/maven-virtual</url>
+            <url>https://homesystemartifactory.jfrog.io/artifactory/maven-local</url>
         </snapshotRepository>
     </distributionManagement>
 
