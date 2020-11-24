@@ -13,12 +13,12 @@ public class RestExceptionHandlerUtil
 	{
 	}
 
-	static ApiError buildApiError(HttpServletRequest req, Exception ex, HttpStatus httpStatus)
+	public static ApiError buildApiError(HttpServletRequest req, Exception ex, HttpStatus httpStatus)
 	{
 		return ApiError.builder()
 				.status(httpStatus)
 				.code(httpStatus.value())
-				.message(ex.getCause() == null ? ex.getMessage() : ex.getCause().getCause().getMessage())
+				.message(ex.getCause() == null ? ex.getMessage() : ex.getCause().getMessage())
 				.path(req.getRequestURI())
 				.build();
 	}
